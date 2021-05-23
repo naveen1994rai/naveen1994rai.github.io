@@ -3,45 +3,62 @@ html {
 }
 
 body {
-  background-color: #0f1016;
+  background-color: #121212;
   /*background-image: url("../images/wbp1.jpg");*/
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
   text-align: center;
-  font-family: "Merriweather", serif;
+  font-family: "Avenir Next", serif;
 }
 
 .container {
-  margin-bottom: 200px;
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .navbar-custom {
-  margin: auto;
   width: 50%;
+  margin: auto;
   outline: none;
   border-radius: 20px;
-  background-color: #1c1d25;
-  font-family: "Source Sans Pro", sans-serif;
+  background-color: #181818;
+  font-family: "Essonnes", normal;
   text-transform: uppercase;
+}
+
+/*
+.navbar-collapse-custom {
+  text-align: center;
+  width: 100%;
+}
+*/
+
+/* change the brand and text color */
+
+.navbar-custom .nav-item {
+  display: block;
 }
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-  color: #eeeeee;
+.navbar-custom .nav-item .nav-link {
+  color: #ffffff;
 }
-/* change the link color */
+
+/* change the link color
+/*
 .navbar-custom .navbar-nav .nav-link {
   color: #eeeeee;
   animation: glitch1 2.5s infinite;
 }
+*/
 
 /* change the color of active or hovered links */
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-  color: #f52870;
+  color: #21bf73;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 
 .navbar-custom .nav-item {
@@ -80,7 +97,7 @@ body {
     opacity: 1;
   }
   55% {
-    transform: skew(-1deg, 0.2deg);
+    transform: skew(-0.7deg, 0.2deg);
     opacity: 0.75;
   }
   50% {
@@ -92,7 +109,7 @@ body {
     opacity: 1;
   }
   75% {
-    transform: skew(0.4deg, 1deg);
+    transform: skew(0.2deg, 1deg);
     opacity: 0.75;
   }
   80% {
@@ -123,7 +140,7 @@ body {
     opacity: 0.25;
   }
   30% {
-    transform: translate(-5px, -2px);
+    transform: translate(-4px, -2px);
     opacity: 0.5;
   }
   35% {
@@ -135,7 +152,7 @@ body {
     opacity: 0.25;
   }
   55% {
-    transform: translate(-5px, -1px);
+    transform: translate(-3px, -1px);
     opacity: 0.5;
   }
   50% {
@@ -147,7 +164,7 @@ body {
     opacity: 0.25;
   }
   75% {
-    transform: translate(-2px, -6px);
+    transform: translate(-2px, -4px);
     opacity: 0.5;
   }
   80% {
@@ -178,7 +195,7 @@ body {
     opacity: 0.25;
   }
   30% {
-    transform: translate(5px, 2px);
+    transform: translate(5px, 3px);
     opacity: 0.5;
   }
   35% {
@@ -190,7 +207,7 @@ body {
     opacity: 0.25;
   }
   55% {
-    transform: translate(5px, 1px);
+    transform: translate(3px, 1px);
     opacity: 0.5;
   }
   50% {
@@ -202,7 +219,7 @@ body {
     opacity: 0.25;
   }
   75% {
-    transform: translate(2px, 6px);
+    transform: translate(2px, 4px);
     opacity: 0.5;
   }
   80% {
@@ -216,38 +233,35 @@ body {
 }
 
 h1 {
-  font-size: 8.625rem;
-  margin: 50px auto 0 auto;
-  font-family: "Sacramento", cursive;
-  color: #08eedf;
+  margin: 5px auto 0 auto;
+  /*font-family: "Sacramento", cursive;*/
+  font: normal normal normal 3.625rem/0 Essonnes;
+  color: #21bf73;
   margin: 0;
   line-height: 0;
   /*Animation*/
-
-  animation: glitch1 2.5s infinite;
 }
 
 h1:nth-child(2) {
-  color: #67f3da;
-  animation: glitch2 2.5s infinite;
+  color: #21bf73;
 }
 
 h1:nth-child(3) {
-  color: #f16f6f;
-  animation: glitch3 2.5s infinite;
+  color: #21bf73;
 }
 
 .sub-description h2 {
   margin: 50px 0;
 }
 
+/*
 .intro-glitch h2 {
   margin: 0;
   line-height: 0;
-  /*Animation*/
 
   animation: glitch1 2.5s infinite;
 }
+
 
 .intro-glitch h2:nth-child(2) {
   color: #67f3da;
@@ -258,22 +272,26 @@ h1:nth-child(3) {
   color: #f16f6f;
   animation: glitch3 2.5s infinite;
 }
+*/
 
 .intro p {
   margin-top: 30px;
 }
 
 h2 {
+  /*
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #08eedf;
+  */
+  font: normal normal bold 2.5rem/0 Essonnes;
+  color: #ffffff;
 }
 
+/*
 .skills-glitch h2 {
   margin: 0;
   line-height: 0;
-  /*Animation*/
 
   animation: glitch1 2.5s infinite;
 }
@@ -288,10 +306,10 @@ h2 {
   animation: glitch3 2.5s infinite;
 }
 
+
 .contact-glitch h2 {
   margin: 0;
   line-height: 0;
-  /*Animation*/
 
   animation: glitch1 2.5s infinite;
 }
@@ -309,7 +327,6 @@ h2 {
 .education-glitch h2 {
   margin: 0;
   line-height: 0;
-  /*Animation*/
 
   animation: glitch1 2.5s infinite;
 }
@@ -323,14 +340,15 @@ h2 {
   color: #f16f6f;
   animation: glitch3 2.5s infinite;
 }
+*/
 
 .education p {
   margin-top: 30px;
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
-  color: #222831;
+  font-family: "Essonnes", normal;
+  color: #f4f3f3;
 }
 
 p {
@@ -338,7 +356,7 @@ p {
 }
 
 hr {
-  border: dotted #0ea89e 6px;
+  border: dotted #21bf73 6px;
   border-bottom: none;
   width: 4%;
   margin: 80px auto;
@@ -392,22 +410,26 @@ hr {
   /*background-color: #373a40;*/
 }
 .middle-container h2 {
-  color: #08eedf;
-  font-family: "raleway-bold";
+  color: #ffffff;
 }
 
 .middle-container h3 {
-  color: #0ea89e;
+  color: #f4f3f3;
 }
 
 .middle-container p {
-  color: #eeeeee;
+  color: #b3b3b3;
 }
 
 .intro {
   width: 30%;
   margin: auto;
 }
+
+#profile .card-item {
+  overflow: auto;
+}
+
 .profile img {
   width: 14.375rem;
   height: 14.375rem;
@@ -417,45 +439,44 @@ hr {
 .skill-row {
   display: inline-block;
   width: 50%;
-  margin: 40px auto 80px auto;
 }
 
-.skills img {
-  width: 12.5rem;
-  height: 12.5rem;
-  margin-top: 0px;
-  margin-right: 10px;
+.card-item {
+  background-color: #181818;
+  margin: 40px auto 0 auto;
+  padding: 2% 1% 0% 1%;
+  border-radius: 2rem;
+}
+
+.responsive-img {
+  width: 10.5rem;
+  height: 10.5rem;
+  /*
+  width: 30%;
+  height: auto;
+  */
+}
+
+.skill-img-left {
+  float: left;
+  margin: 0 10px 20px 0;
+}
+
+.skill-img-right {
+  float: right;
+  margin: 0 0 20px 10px;
 }
 
 .skills ul li {
   display: inline-block;
   margin: 10px;
   margin-top: 50px;
-  color: #eeeeee;
+  color: #b3b3b3;
   font-size: medium;
 }
 
 .skills ul li:hover {
-  color: #f52870;
-}
-.first-skill {
-  float: left;
-  margin-right: 10px;
-}
-
-.second-skill {
-  float: right;
-  margin-left: 10px;
-}
-
-.third-skill {
-  float: left;
-  margin-right: 10px;
-}
-
-.fourth-skill {
-  float: right;
-  margin-left: 10px;
+  color: #21bf73;
 }
 
 .education {
@@ -464,37 +485,45 @@ hr {
   margin-bottom: 0px;
 }
 
+.education ul {
+  padding-bottom: 20px;
+}
+
 .education ul li {
   display: block;
-  margin: 10px;
-  margin-top: 50px;
-  color: #eeeeee;
+  margin: 20px 10px 10px 10px;
+  color: #b3b3b3;
   font-size: medium;
   list-style-type: none;
 }
 
 .education ul li:hover {
-  color: #f52870;
+  color: #21bf73;
 }
 
-.contact-me img {
-  width: 5rem;
-  height: 5rem;
+.contact-me {
+  display: inline-block;
+  width: 50%;
 }
 
 .contact-me p {
   margin: 30px 0;
 }
 
+.contact-me a {
+  color: #ffffff;
+}
+
 a i:hover {
   transform: scale(1.2);
+  color: #21bf73;
 }
 
 .bottom-container {
-  background-color: #1c1d25;
+  background-color: #282828;
   padding: 50px 0 20px;
   margin-bottom: 0;
-  color: #08eedf;
+  color: #b3b3b3;
 }
 
 .bottom-container a:hover {
@@ -502,11 +531,13 @@ a i:hover {
   -ms-transform: scale(1); /* IE 9 */
   -webkit-transform: scale(1); /* Safari */
   transform: scale(1);
+  color: #21bf73;
 }
 
 .footer-link-icons {
   margin-bottom: 20px;
   padding: 0 10px;
+  color: #ffffff;
 }
 
 .scrolled-down {
@@ -516,4 +547,69 @@ a i:hover {
 .scrolled-up {
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    margin: 50px auto 0 auto;
+    /*font-family: "Sacramento", cursive;*/
+    font: normal normal normal 8.625rem/0 Essonnes;
+    margin: 0;
+    line-height: 0;
+    /*Animation*/
+
+    animation: glitch1 5.5s infinite;
+  }
+
+  h1:nth-child(2) {
+    animation: glitch2 15.5s infinite;
+  }
+
+  h1:nth-child(3) {
+    animation: glitch3 5.5s infinite;
+  }
+
+  .navbar-custom .nav-item {
+    display: inline-block;
+  }
+
+  .container {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skill-img-left {
+    display: none;
+  }
+
+  .skill-img-right {
+    display: none;
+  }
+
+  .skills ul {
+    padding: 0;
+  }
+
+  .education-list {
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .education ul {
+    margin: 0px;
+    padding: 0 10px 10px 10px;
+  }
+
+  .education ul li {
+    margin-bottom: 5px;
+    font-size: small;
+  }
+  */ .skills ul li {
+    display: inline-block;
+    margin: 3px;
+    margin-top: 25px;
+    color: #b3b3b3;
+    font-size: small;
+  }
 }
