@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-custom {
-  width: 50%;
+  width: 70%;
   margin: auto;
   outline: none;
   border-radius: 20px;
@@ -478,6 +478,10 @@ a i:hover {
     animation: glitch3 5.5s infinite;
   }
 
+  .navbar-custom {
+    width: 50%;
+  }
+
   .navbar-custom .nav-item {
     display: inline-block;
   }
@@ -499,6 +503,11 @@ a i:hover {
   h1 {
     font-size: 2rem;
   }
+
+  .card-item {
+    width: 70%;
+  }
+
   .skill-img-left {
     display: none;
   }
