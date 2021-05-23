@@ -504,6 +504,14 @@ a i:hover {
     font-size: 2rem;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
   .card-item {
     width: 70%;
   }
