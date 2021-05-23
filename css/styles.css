@@ -329,8 +329,9 @@ hr {
 }
 
 .intro {
-  width: 30%;
+  width: 50%;
   margin: auto;
+  overflow: auto;
 }
 
 #profile .card-item {
@@ -458,10 +459,6 @@ a i:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  .top-container {
-    margin-bottom: 450px;
-  }
-
   h1 {
     margin: 50px auto 0 auto;
     /*font-family: "Sacramento", cursive;*/
@@ -488,9 +485,20 @@ a i:hover {
   .container {
     margin-bottom: 200px;
   }
+
+  .top-container {
+    margin-bottom: 450px;
+  }
+
+  .intro {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
   .skill-img-left {
     display: none;
   }
