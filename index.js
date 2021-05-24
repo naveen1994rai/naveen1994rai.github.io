@@ -21,3 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }); 
     }
 }); 
+
+$(".download-button").hover(function () {
+  $(this).html('GO');
+}, function () {
+  $(this).html('<i class="fa fa-download" aria-hidden="true"></i> Resume');
+})
