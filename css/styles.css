@@ -775,11 +775,14 @@ a i:hover {
 }
 
 .main-timeline .timeline-content .title {
+  font-family: "Essonnes", normal;
   color: #f4f3f3;
+  text-align: center;
 }
 
 .main-timeline .timeline-content .description {
   color: #b3b3b3;
+  text-align: center;
 }
 
 @media only screen and (max-width: 991px) {
