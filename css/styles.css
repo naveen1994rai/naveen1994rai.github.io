@@ -306,10 +306,6 @@ h2 {
   color: #ffffff;
 }
 
-.education p {
-  margin-top: 30px;
-}
-
 h3 {
   font-family: "Essonnes", normal;
   color: #f4f3f3;
@@ -407,28 +403,6 @@ hr {
 }
 
 .skills ul li:hover {
-  color: #bca18c;
-}
-
-.education {
-  display: inline-block;
-  width: 50%;
-  margin-bottom: 0px;
-}
-
-.education ul {
-  padding-bottom: 20px;
-}
-
-.education ul li {
-  display: block;
-  margin: 20px 10px 10px 10px;
-  color: #b3b3b3;
-  font-size: medium;
-  list-style-type: none;
-}
-
-.education ul li:hover {
   color: #bca18c;
 }
 
@@ -562,20 +536,6 @@ a i:hover {
     padding: 0;
   }
 
-  .education-list {
-    margin: 10px 0;
-    padding: 0;
-  }
-
-  .education ul {
-    margin: 0px;
-    padding: 0 10px 10px 10px;
-  }
-
-  .education ul li {
-    margin-bottom: 5px;
-    font-size: small;
-  }
   .skills ul li {
     display: inline-block;
     margin: 3px;
@@ -585,7 +545,8 @@ a i:hover {
   }
 }
 
-#education h2 {
+#education h2,
+#work-experience h2 {
   margin-bottom: 40px;
 }
 
@@ -738,8 +699,8 @@ a i:hover {
 
 .main-timeline .year {
   display: block;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   color: #232323;
   line-height: 36px;
 }
@@ -838,7 +799,7 @@ a i:hover {
     top: 30%;
   }
   .main-timeline .year {
-    font-size: 24px;
+    font-size: 12px;
   }
   .main-timeline .timeline-content,
   .main-timeline .timeline:nth-child(2n) .timeline-content {
