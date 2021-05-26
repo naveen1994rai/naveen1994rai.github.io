@@ -435,6 +435,12 @@ a i:hover {
   color: #bca18c;
 }
 
+.whatsapp img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10%;
+}
+
 .bottom-container {
   background-color: #282828;
   padding: 50px 0 20px;
@@ -508,6 +514,12 @@ a i:hover {
 
   .intro {
     width: 30%;
+  }
+
+  .whatsapp img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
   }
 }
 
