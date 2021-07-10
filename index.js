@@ -1,3 +1,13 @@
+$('.nav-link, .fa-arrow-alt-circle-down, .fa-arrow-alt-circle-up').click(function () {
+  console.log("clicked");
+  var sectionTo = $(this).attr('href');
+  console.log(sectionTo);
+  console.log("Jump to : " + $(sectionTo).offset().top);
+  $('html, body').animate({
+    scrollTop: $(sectionTo).offset().top
+  }, 1300);
+});
+
 document.addEventListener("DOMContentLoaded", function () {
 
     let autohide = document.querySelector('.autohide');
