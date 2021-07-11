@@ -386,7 +386,9 @@ hr {
   border: 1px groove #bca18c;
   margin: 40px auto 0 auto;
   padding: 2% 1% 0% 1%;
-  border-radius: 1rem;
+  border-radius: 2rem;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .responsive-img {
